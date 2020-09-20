@@ -18,7 +18,7 @@ func Avg (payments []types.Payment)  types.Money {
 	 func TotalInCategory(payments []types.Payment, category types.Category ) types.Money {
 		var categorySum types.Money
 		for _, v := range payments {
-			if v.Category == "Club"{
+			if v.Category == category{
 			   categorySum+=v.Amount
 			}}
 			
