@@ -14,4 +14,15 @@ func Avg (payments []types.Payment)  types.Money {
 		 return total/types.Money(payment)
 		 
 	 }
-	 
+	 //  TotalInCategory - находить сумму пакупок определённой котегории
+	 func TotalInCategory(payments []types.Payment, category types.Category ) types.Money {
+		var categorySum types.Money
+		for _, v := range payments {
+			if v.Category == "Club"{
+			   categorySum+=v.Amount
+			}}
+			
+			return categorySum
+		
+		
+	}
